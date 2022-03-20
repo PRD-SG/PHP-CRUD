@@ -17,22 +17,22 @@
         }
 
         public function insert($firstname, $lastname, $email, $phonenumber,	$address) {
-            $result = mysqli_query($this->dbcon, "INSERT INTO tblusers(firstname, lastname, email, phonenumber, address) VALUES('$firstname', '$lastname', '$email', '$phonenumber', '$address')");
+            $result = mysqli_query($this->dbcon, "INSERT INTO users(firstname, lastname, email, phonenumber, address) VALUES('$firstname', '$lastname', '$email', '$phonenumber', '$address')");
             return $result;
         }
 
         public function fetchdata() {
-            $result = mysqli_query($this->dbcon, "SELECT * FROM tblusers");
+            $result = mysqli_query($this->dbcon, "SELECT * FROM users");
             return $result;
         }
 
         public function fetchonerecord($userid) {
-            $result = mysqli_query($this->dbcon, "SELECT * FROM tblusers WHERE id = '$userid'");
+            $result = mysqli_query($this->dbcon, "SELECT * FROM users WHERE id = '$userid'");
             return $result;
         }
 
         public function update($firstname, $lastname, $email, $phonenumber,	$address, $userid) {
-            $result = mysqli_query($this->dbcon, "UPDATE tblusers SET 
+            $result = mysqli_query($this->dbcon, "UPDATE users SET 
                 firstname = '$firstname',
                 lastname = '$lastname',
                 email = '$email',
@@ -44,7 +44,7 @@
         }
 
         public function delete($userid) {
-            $deleterecord = mysqli_query($this->dbcon, "DELETE FROM tblusers WHERE id = '$userid'");
+            $deleterecord = mysqli_query($this->dbcon, "DELETE FROM users WHERE id = '$userid'");
             return $deleterecord;
         }
 
