@@ -38,12 +38,12 @@
 
                 <tr>
                     <td><?php echo $row['id']; ?></td>
-                    <td><?php echo $row['firstname']; ?></td>
-                    <td><?php echo $row['lastname']; ?></td>
+                    <td><?php echo $row['first_name']; ?></td>
+                    <td><?php echo $row['last_name']; ?></td>
                     <td><?php echo $row['email']; ?></td>
-                    <td><?php echo $row['phonenumber']; ?></td>
+                    <td><?php echo $row['phone_number']; ?></td>
                     <td><?php echo $row['address']; ?></td>
-                    <td><?php echo $row['postingdate']; ?></td>
+                    <td><?php echo $row['posting_date']; ?></td>
                     <td><a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">Edit</a></td>
                     <td><a href="delete.php?del=<?php echo $row['id']; ?>" class="btn btn-danger">Delete</a></td>
                 </tr>
