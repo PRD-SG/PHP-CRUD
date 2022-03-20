@@ -44,11 +44,11 @@
         <form action="" method="post">
             <div class="mb-3">
                 <label for="firstname" class="form-label">First name</label>
-                <input type="text" class="form-control" name="firstname" required>
+                <input type="text" class="form-control" name="first_name" required>
             </div>
             <div class="mb-3">
                 <label for="lastname" class="form-label">Last name</label>
-                <input type="text" class="form-control" name="lastname" required>
+                <input type="text" class="form-control" name="last_name" required>
             </div>
             <div class="mb-3">
                 <label for="email">Email</label>
@@ -56,7 +56,7 @@
             </div>
             <div class="mb-3">
                 <label for="phonenumber">Phone Number</label>
-                <input type="text" class="form-control" name="phonenumber" required>
+                <input type="text" class="form-control" name="phone_number" required>
             </div>
             <div class="mb-3">
                 <label for="address">Address</label>
