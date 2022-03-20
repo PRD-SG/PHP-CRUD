@@ -51,12 +51,12 @@
         <form action="" method="post">
             <div class="mb-3">
                 <label for="firstname" class="form-label">First name</label>
-                <input type="text" class="form-control" name="firstname" 
+                <input type="text" class="form-control" name="first_name" 
                     value="<?php echo $row['first_name']; ?>" required>
             </div>
             <div class="mb-3">
                 <label for="lastname" class="form-label">Last name</label>
-                <input type="text" class="form-control" name="lastname"
+                <input type="text" class="form-control" name="last_name"
                     value="<?php echo $row['last_name']; ?>" required>
             </div>
             <div class="mb-3">
@@ -66,7 +66,7 @@
             </div>
             <div class="mb-3">
                 <label for="phonenumber">Phone Number</label>
-                <input type="text" class="form-control" name="phonenumber"
+                <input type="text" class="form-control" name="phone_number"
                     value="<?php echo $row['phone_number']; ?>" required>
             </div>
             <div class="mb-3">
