@@ -19,7 +19,7 @@
             echo "<script>window.location.href='index.php'</script>";
         } else {
             echo "<script>alert('Something went wrong! Please try again!');</script>";
-            echo "<script>window.location.href='update.php'</script>";
+            echo "<script>window.location.href='index.php'</script>";
         }
     }
 
