@@ -3,7 +3,7 @@
     define('DB_SERVER', 'acw2033ndw0at1t7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com');
     define('DB_USER', 'm3i1m0ppyehvoh4f');
     define('DB_PASS', 'jjm70j4tqbvcfs71');
-    define('DB_NAME', '	fwzfgv1uf33fibh9');
+    define('DB_NAME', 'fwzfgv1uf33fibh9');
     
     class DB_con {
 
