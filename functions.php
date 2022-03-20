@@ -17,7 +17,7 @@
         }
 
         public function insert($firstname, $lastname, $email, $phonenumber,	$address) {
-            $result = mysqli_query($this->dbcon, "INSERT INTO users(firstname, lastname, email, phonenumber, address) VALUES('$firstname', '$lastname', '$email', '$phonenumber', '$address')");
+            $result = mysqli_query($this->dbcon, "INSERT INTO users(first_name, last_name, email, phone_number, address) VALUES('$firstname', '$lastname', '$email', '$phonenumber', '$address')");
             return $result;
         }
 
@@ -33,10 +33,10 @@
 
         public function update($firstname, $lastname, $email, $phonenumber,	$address, $userid) {
             $result = mysqli_query($this->dbcon, "UPDATE users SET 
-                firstname = '$firstname',
-                lastname = '$lastname',
+                first_name = '$firstname',
+                last_name = '$lastname',
                 email = '$email',
-                phonenumber = '$phonenumber',
+                phone_number = '$phonenumber',
                 address = '$address'
                 WHERE id = '$userid'
             ");

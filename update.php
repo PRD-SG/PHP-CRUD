@@ -7,10 +7,10 @@
     if (isset($_POST['update'])) {
 
         $userid = $_GET['id'];
-        $fname = $_POST['firstname'];
-        $lname = $_POST['lastname'];
+        $fname = $_POST['first_name'];
+        $lname = $_POST['last_name'];
         $email = $_POST['email'];
-        $phonenumber = $_POST['phonenumber'];
+        $phonenumber = $_POST['phone_number'];
         $address = $_POST['address'];
 
         $sql = $updatedata->update($fname, $lname, $email, $phonenumber, $address, $userid);
@@ -52,12 +52,12 @@
             <div class="mb-3">
                 <label for="firstname" class="form-label">First name</label>
                 <input type="text" class="form-control" name="firstname" 
-                    value="<?php echo $row['firstname']; ?>" required>
+                    value="<?php echo $row['first_name']; ?>" required>
             </div>
             <div class="mb-3">
                 <label for="lastname" class="form-label">Last name</label>
                 <input type="text" class="form-control" name="lastname"
-                    value="<?php echo $row['lastname']; ?>" required>
+                    value="<?php echo $row['last_name']; ?>" required>
             </div>
             <div class="mb-3">
                 <label for="email">Email</label>
@@ -67,7 +67,7 @@
             <div class="mb-3">
                 <label for="phonenumber">Phone Number</label>
                 <input type="text" class="form-control" name="phonenumber"
-                    value="<?php echo $row['phonenumber']; ?>" required>
+                    value="<?php echo $row['phone_number']; ?>" required>
             </div>
             <div class="mb-3">
                 <label for="address">Address</label>

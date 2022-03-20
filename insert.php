@@ -5,10 +5,10 @@
     $insertdata = new DB_con();
 
     if (isset($_POST['insert'])) {
-        $fname = $_POST['firstname'];
-        $lname = $_POST['lastname'];
+        $fname = $_POST['first_name'];
+        $lname = $_POST['last_name'];
         $email = $_POST['email'];
-        $phonenumber = $_POST['phonenumber'];
+        $phonenumber = $_POST['phone_number'];
         $address = $_POST['address'];
         
         $sql = $insertdata->insert($fname, $lname, $email, $phonenumber, $address);
