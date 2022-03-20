@@ -8,7 +8,7 @@
         $fname = $_POST['first_name'];
         $lname = $_POST['last_name'];
         $email = $_POST['email'];
-        $phonenumber = $_POST['/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'];
+        $phonenumber = $_POST['phone_number'];
         $address = $_POST['address'];
         
         $sql = $insertdata->insert($fname, $lname, $email, $phonenumber, $address);
